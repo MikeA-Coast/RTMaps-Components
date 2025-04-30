@@ -19,7 +19,7 @@ class rtmaps_python(BaseComponent):
         os.makedirs(log_dir, exist_ok=True)
 
         timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-        self.filename = os.path.join(log_dir, f"supervision_log{timestamp}.txt")
+        self.filename = os.path.join(log_dir, f"supervision_log_{timestamp}.txt")
 
     def Core(self):
         ioelt = self.inputs["in"].ioelt
